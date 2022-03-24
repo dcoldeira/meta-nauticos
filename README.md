@@ -16,7 +16,7 @@ NauticOS is aiming to optimize marine navegation softwares and only include what
 
 **Currently working on the [Raspberry Pi build](https://doc.qt.io/QtForDeviceCreation/b2qt-how-to-create-b2qt-image.html)**
 
-## For people wanting to get involved in the project:
+## People wanting to get involved in the project -
 
 I have been working on the Raspberry Pi build, please take a look at the [RaspPi branch](https://github.com/dcoldeira/NauticOS/tree/RaspPi) and try and see if you can compile and build the image if you like but, **please be aware that this process can take very long time (days depending on your system)** so I would rather provide you a link once I am happy with the image so that you can download it and boot it on your Raspberry Pi and start the actual C++ development.
 
