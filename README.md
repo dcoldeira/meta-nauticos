@@ -1,21 +1,19 @@
 # NauticOS
 
-### [An small OS for skippers, boaters and sailors targeting small single-board computers (SBCs) and the alike architectures...](https://github.com/dcoldeira/NauticOS)
+### [An small OS aiming to optimize marine navegation softwares targeting small single-board computers (SBCs) and the alike architectures...](https://github.com/dcoldeira/NauticOS)
 
 
 
-## Raspbery Pi Build 
+## This is the Raspbery Pi build 
 
-**Currently working on the [Raspberry Pi build](https://doc.qt.io/QtForDeviceCreation/b2qt-how-to-create-b2qt-image.html)**
-
-## For people wanting to get involved in the project:
+**Please be aware that this process can take very long time (days depending on your system..)**
 
 Make sure you have installed the management tool `Repo` by Google, if not, as super root and assuming you are in a Debian distribution or derivative of some sort:
 
 ```Bash
 apt install repo
 ```
-Create a project directory (i.e mkdir My_Project) and cd to it, then:
+Create a project directory (i.e mkdir My_Project) and cd into it, then:
 
 ```Bash
 repo init -u git://code.qt.io/yocto/boot2qt-manifest -m v6.2.3.xml
@@ -51,7 +49,7 @@ PARALLEL_MAKE ?= "-j1"
 ```
 
     
-Safe your changes and let's build the full image:
+Save your changes and let's build the full image:
 
 ```Bash
 bitbake b2qt-embedded-qt6-image
