@@ -40,22 +40,20 @@ Then define what Raspberry Pi you have:
 export MACHINE=raspberrypi_NUMBER && source ./setup-environment.sh
 ```
 
-This will not just create a sub directory `build-raspberrypi_NUMBER` but also reallocate you inside it. In this directory you will find the corresponding configuration files of the project `bblayers.conf`,  `local.conf` and `templateconf.cfg` inside the `/conf`, for this build we better change the following parameters inside `local.conf`:
-
-```Bash
-BB_NUMBER_THREADS ?= "1"
- 
-PARALLEL_MAKE ?= "-j1"
-```
+This will not just create a sub directory `build-raspberrypi_NUMBER` but also reallocate you inside it. All corresponding configuration files of the project `bblayers.conf`,  `local.conf` and `templateconf.cfg` are in this directory.
 
     
-Save your changes and let's build the full image:
+Now you can build the full image by running the command:
 
 ```Bash
 bitbake b2qt-embedded-qt6-image
 ```
 
-This process will take ages as it compiles all the source code... Once all has compilated and built we can flash the image into a SD card, let's use `bmap-tools`:
+This process will take ages as it compiles all the source code... Once all has compilated and built we can flash the image into a SD card. You can use the Raspberry Imager or bmap-tools. 
+
+**To use the Raspberry Imager,** just download it `sudo apt install rpi-imager` and choose the `Use Custom` option and then inside Project_Name/build-raspberrypi_Number/tmp/deploy/raspberrypi_Number look for the corresponding wic.xz file that you can flash.
+
+And **to use `bmap-tools`,** make sure it is installed
 
 ```Bash
 sudo apt-get install -y bmap-tools
