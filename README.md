@@ -70,6 +70,22 @@ bmaptool: info: block map format version 2.0
 bmaptool: info: 687923 blocks of size 4096 (2.6 GiB), mapped 374929 blocks (1.4 GiB or 54.5%)
 bmaptool: info: copying image 'b2qt-embedded-qt6-image-raspberrypi_NUMBER.wic.bz2' to block device '/dev/sda' using bmap file 'b2qt-embedded-qt6-image-raspberrypi_NUMBER.wic.bmap'
 ```
+
+**Adding the kit in Qt Creator**
+
+```Bash
+bitbake meta-toolchain-b2qt-embedded-qt6-sdk
+```
+This process does take a while..
+
 **Building the cross-compile SDK**
 
+```Bash
+/opt/b2qt/3.3.4/configure-qtcreator.sh --config /opt/b2qt/3.3.4/environment-setup-cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi --qtcreator /home/dcoldeira/Qt/Tools/QtCreator/ --name qt6-pi3  
+```
+So here 
+--config: points to the file that the SDK installer tells you to source.
+--qtcreator: points to the folder where QtCreator is installed.. 
+--name: the name of the new kit
 
+Afterthis process a remote device needesto be added to the QtCreator.. 
