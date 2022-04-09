@@ -81,11 +81,11 @@ This process does take a while..
 **Building the cross-compile SDK**
 
 ```Bash
-/opt/b2qt/3.3.4/configure-qtcreator.sh --config /opt/b2qt/3.3.4/environment-setup-cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi --qtcreator .../Qt/Tools/QtCreator/ --name qt6-pi3  #where your QtCreator is installed
+/opt/b2qt/3.3.4/configure-qtcreator.sh --config /opt/b2qt/3.3.4/environment-setup-cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi --qtcreator .../Qt/Tools/QtCreator/ --name qt6-pi3  # where your QtCreator is installed
 ```
 So here 
 --config: points to the file that the SDK installer tells you to source.
 --qtcreator: points to the folder where QtCreator is installed.. 
 --name: the name of the new kit
 
-Afterthis process a remote device needesto be added to the QtCreator.. 
+After this process, a remote device needes to be added to the QtCreator, it should come up when opening the QtCreator under Tools/Options/Kit... Then you will have to create a new device (few tabs down from where the kits are).
