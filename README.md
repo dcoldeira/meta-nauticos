@@ -14,7 +14,7 @@
 - The Yocto image or build with all the recipes as per the SBC. 
 
 
-*Builds are collection of layers (including this repo, meta-nautics) baked and made with [The Yocto Project](https://www.yoctoproject.org/) aiming to useintegrate C++ and possibly [dart/flutter](https://github.com/meta-flutter/meta-flutter) too for embedding. Images will be available to download as soon as they are ready for production.* 
+*Builds are collection of layers (including this repo, meta-nauticos) baked and made with [The Yocto Project](https://www.yoctoproject.org/) aiming to useintegrate C++ and possibly [dart/flutter](https://github.com/meta-flutter/meta-flutter) too for embedding. Images will be available to download as soon as they are ready for production.* 
 
 
 ## **Currently working on the Raspberry Pi build.**
